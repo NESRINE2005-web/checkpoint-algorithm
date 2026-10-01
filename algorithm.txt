@@ -1,10 +1,10 @@
 ALGORITHM readsSentence
 
-VAR
-    char : CHARACTER
-    length : INTEGER
-    words : INTEGER
-    vowels : INTEGER
+VARIABLES
+    char 
+    length 
+    words 
+    vowels 
 
 BEGIN
 
