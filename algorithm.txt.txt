@@ -1,0 +1,41 @@
+ALGORITHM readsSentence
+
+VAR
+    char : CHARACTER
+    length : INTEGER
+    words : INTEGER
+    vowels : INTEGER
+
+BEGIN
+
+    length ← 0
+    words ← 0
+    vowels ← 0
+
+    READ(char)
+
+    WHILE char ≠ '.' DO
+
+        length ← length + 1
+
+        IF char = ' ' THEN
+            words ← words + 1
+        END_IF
+
+        IF char = 'a' OR char = 'e' OR char = 'i' OR char = 'o' OR char = 'u' THEN
+            vowels ← vowels + 1
+        END_IF
+
+        READ(char)
+
+    END_WHILE
+
+    length ← length + 1
+
+    words ← words + 1
+
+    WRITE("Length = ", length)
+    WRITE("Number of words = ", words)
+    WRITE("Number of vowels = ", vowels)
+
+END
